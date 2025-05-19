@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve", // or "react-jsx" if using React 17+
+    "module": "esnext",
+    "target": "es6",
+    "allowJs": true,
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
