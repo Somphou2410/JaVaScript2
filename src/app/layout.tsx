@@ -1,16 +1,14 @@
-import './globals.css';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+// src/app/layout.tsx
+import './globals.css'; // ถ้ามีไฟล์ CSS รวม
 
 export const metadata = {
-  title: 'Your App Title',
-  description: 'Your App Description',
+  title: 'My App',
+  description: 'Login and Dashboard App',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
